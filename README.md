@@ -66,10 +66,10 @@ For a complete, working example, refer to the [login example](https://github.com
 
 ## Credits
 
-  - [Dan Lahs](http://github.com/danlash)
+  - [Dan Lash](http://github.com/danlash)
 
 ## License
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
+Code based on [passport-amazon](http://github.com/jaredhanson/passport-amazon), Copyright (c) 2013 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
