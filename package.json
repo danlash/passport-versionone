@@ -2,7 +2,15 @@
   "name": "passport-versionone",
   "version": "0.1.0",
   "description": "VersionOne authentication strategy for Passport.",
-  "keywords": ["passport", "versionone", "auth", "authn", "authentication", "identity"],
+  "keywords": [
+    "passport",
+    "versionone",
+    "auth",
+    "authn",
+    "authentication",
+    "identity",
+    "versionone"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/versionone/passport-versionone.git"
@@ -14,14 +22,17 @@
     "name": "Dan Lash",
     "email": "danlash@gmail.com"
   },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "main": "./lib/passport-versionone",
   "dependencies": {
+    "passport-oauth": "0.1.x",
     "pkginfo": "0.2.x",
-    "passport-oauth": "0.1.x"
+    "url-join": "0.0.1"
   },
   "devDependencies": {
     "vows": "0.6.x"
@@ -29,5 +40,7 @@
   "scripts": {
     "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
   },
-  "engines": { "node": ">= 0.4.0" }
+  "engines": {
+    "node": ">= 0.4.0"
+  }
 }

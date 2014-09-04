@@ -30,7 +30,7 @@ vows.describe('VersionOneStrategy').addBatch({
       
       // NOTE: This response is received if the user profile is requested from
       //       the following endpoint:
-      //         https://<host>//query.v1?query=from%3A%20Member%0Aselect%3A%0A%20%20-%20Name%0A%20%20-%20Email%0Awhere%3A%0A%20%20IsSelf%3A%20true
+      //         https://<host>/query.v1?query=from%3A%20Member%0Aselect%3A%0A%20%20-%20Name%0A%20%20-%20Email%0Awhere%3A%0A%20%20IsSelf%3A%20true
       
       // mock
       strategy._oauth2.get = function(url, accessToken, callback) {
