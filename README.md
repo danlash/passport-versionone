@@ -23,12 +23,15 @@ accepts these credentials and calls `done` providing a user, as well as
 `options` specifying a client ID, client secret, and callback URL.
 
 The client ID and secret are obtained by registering an application at your
-Member Detail Page (profile).
+Member Detail Page (profile) on the Permitted Apps tab. The instance url is
+required and can be obtained in the address bar of your browser when using
+the application.
 
     passport.use(new VersionOneStrategy({
         clientID: VERSIONONE_CLIENT_ID,
         clientSecret: VERSIONONE_CLIENT_SECRET,
-        callbackURL: "http://127.0.0.1:3000/auth/versionone/callback"
+        callbackURL: "http://127.0.0.1:3000/auth/versionone/callback",
+        instanceURL: 'http://v1host.com/versionone/' //example, replace with your instance URL
       },
       function(accessToken, refreshToken, profile, done) {
         User.findOrCreate({ versiononeId: profile.id }, function (err, user) {
@@ -72,4 +75,4 @@ For a complete, working example, refer to the [login example](https://github.com
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Code based on [passport-amazon](http://github.com/jaredhanson/passport-amazon), Copyright (c) 2013 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
+Code based on [passport-amazon](http://github.com/jaredhanson/passport-amazon), Copyright (c) 2013 Jared Hanson [http://jaredhanson.net/](http://jaredhanson.net/)

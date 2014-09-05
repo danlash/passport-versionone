@@ -30,7 +30,8 @@ passport.deserializeUser(function(obj, done) {
 passport.use(new VersionOneStrategy({
     clientID: VERSIONONE_CLIENT_ID,
     clientSecret: VERSIONONE_CLIENT_SECRET,
-    callbackURL: "http://127.0.0.1:3000/auth/versionone/callback"
+    callbackURL: "http://127.0.0.1:3000/auth/versionone/callback",
+    instanceURL: 'http://v1host.com/versionone/' //example, replace with your instance URL
   },
   function(accessToken, refreshToken, profile, done) {
     // asynchronous verification, for effect...
