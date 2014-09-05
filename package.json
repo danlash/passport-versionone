@@ -9,7 +9,6 @@
     "authn",
     "authentication",
     "identity",
-    "versionone"
   ],
   "repository": {
     "type": "git",
