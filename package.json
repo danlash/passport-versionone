@@ -29,6 +29,7 @@
   ],
   "main": "./lib/passport-versionone",
   "dependencies": {
+    "oauth": "^0.9.12",
     "passport-oauth": "0.1.x",
     "pkginfo": "0.2.x",
     "url-join": "0.0.1"
